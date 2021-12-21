@@ -1,0 +1,105 @@
+# chapter - 1: Introduction, Data Types and Operators
+
+# installation - install it from python.org and set the path variable
+
+# Variables and data types in python
+# variables - we can assign any data type to the variable, variable name can be start with any letter as well as "_" or "__". Variable name cannot be start with any special character i.e. "*&^%$#@!()<>?|"s
+# NOTE: it's not good practice to declare a variable with the name of default python keyword
+
+
+a = 12
+b = 12.2
+c = "student name"
+d = [1,2,3]
+e = (1,2,3)
+f = {1,2,3}
+g = {"name":"John Dev", "profile":"JavaScript Developer"}
+
+# datatypes - 
+# 1) numeric - integer, floar, complex numbers
+# 2) dictionary
+# 3) boolean 
+# 4) set
+# 5) Sequence type - string, list, tuple
+
+# integer
+a = 12
+print(type(a))
+
+# float
+b = 12.0
+print(type(b))
+
+# complex number
+c = 1 + 2j
+print(type(c))
+
+# dictionary
+d = {"name":"John Dev", "profile":"JavaScript Developer"}
+
+# boolean
+yes = True
+no = False
+print(type(yes))
+print(type(no))
+
+# set - we can define set in 2 ways
+se = {1,2,3}
+se1 = set((1,2,3))
+print(type(se))
+print(type(se1))
+
+# seuence type
+string = "this is a string type"
+lst = ["this", "is", "a", "list", "type"]
+dictionary = {"type":"dictionary", "name":"dictionary"}
+
+# computations and logical statements using python's operator
+# arithmetic operators
+print(1+2)
+print(1-2)
+print(1/2)
+print(1*2)
+print(1//2) #integer devision - returns integer value after devision
+print(1%2) #gives us the reminder after devision
+
+# comparison operators
+num1 = 2 
+num2 = 3
+print(num1 == num2) #compares two numbers
+print(num1 != num2) #compares two numbers
+print(num1 >= num2) #compares two numbers
+print(num1 <= num2) #compares two numbers
+
+# logical operators
+print(True and True)
+print(True and False)
+print(False and True)
+print(False and False)
+
+# membership operators - in, not in(used to check if something is inside something or not)
+name = "rajvi patel"
+print("rajvi" in name)
+print("raju" in name)
+
+# identity operators - Membership operators are operators used to 
+# validate the membership of a value. It tests for membership in a
+# sequence, such as strings, lists, or tuples.
+print(type("name"))
+print(type(12))
+print(type(12.0))
+print(type([1,2,3]))
+print(type({1,2,3}))
+print(type((1,2,3)))
+
+# bitwise operators
+a = 10
+b = 4
+# Print bitwise AND operation
+print("a & b =", a & b)
+# Print bitwise OR operation
+print("a | b =", a | b)
+# Print bitwise NOT operation
+print("~a =", ~a)
+# print bitwise XOR operation
+print("a ^ b =", a ^ b)
